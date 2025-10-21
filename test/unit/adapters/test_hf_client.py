@@ -1,8 +1,8 @@
+from test.helpers.builders import make_response
 from unittest.mock import MagicMock, patch
 
 import pytest
 import requests
-from test.helpers.builders import make_response
 
 from model_audit_cli.adapters.client import HFClient
 from model_audit_cli.errors import SCHEMA_ERROR, AppError
