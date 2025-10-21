@@ -50,8 +50,8 @@ CI expects all tests to pass and **≥ 80%** code coverage over `src/`.
 
 Optional HTML report (human-friendly):
 ```bash
-pytest --cov=src --cov-report=html:tests/_htmlcov
-# open tests/_htmlcov/index.html
+pytest --cov=src --cov-report=html:test/_htmlcov
+# open test/_htmlcov/index.html
 ```
 
 ---

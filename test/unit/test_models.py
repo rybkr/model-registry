@@ -1,3 +1,5 @@
+"""Tests for Pydantic models and data validation."""
+
 import json
 import pathlib
 
@@ -5,11 +7,11 @@ import pytest
 
 from model_audit_cli.models import Metrics
 
-GOLDEN_FILE = pathlib.Path(__file__).parent / "fixtures" / "golden" / "metrics.ndjson"
+GOLDEN_FILE = pathlib.Path(__file__).parent.parent / "fixtures" / "golden" / "metrics.ndjson"
 
 
 def test_golden_file_validates() -> None:
-    """Function that validates models against golden test case."""
+    """Validate that golden file data conforms to Metrics model schema."""
     with GOLDEN_FILE.open() as f:
         for i, line in enumerate(f, start=1):
             data = json.loads(line)

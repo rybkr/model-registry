@@ -5,7 +5,7 @@ from unittest.mock import MagicMock, patch
 
 import pytest
 import requests
-from utils import build_tgz, make_response
+from test.helpers.builders import build_tgz, make_response
 
 from model_audit_cli.adapters.code_fetchers import open_codebase
 from model_audit_cli.errors import NETWORK_ERROR, UNSUPPORTED_URL, AppError

@@ -36,11 +36,11 @@ line_length = 88
 
 [tool.mypy]
 strict = true
-files = ["src/model_audit_cli", "tests"]
+files = ["src", "test"]
 mypy_path = "src"
 
 [tool.pytest.ini_options]
-testpaths = ["tests"]
+testpaths = ["test"]
 markers = [
     "unit: fast, isolated tests",
     "integration: hits external systems (db, services, network)",

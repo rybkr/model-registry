@@ -2,7 +2,7 @@ from model_audit_cli.models import Metrics, SizeScore
 
 # where to write the golden file
 # REPO_ROOT = pathlib.Path(__file__).resolve().parents[2]
-GOLDEN_FILE = "tests/golden/metrics.ndjson"
+GOLDEN_FILE = "test/golden/metrics.ndjson"
 
 # sample "golden" object
 example = Metrics(
