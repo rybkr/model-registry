@@ -7,7 +7,9 @@ import pytest
 
 from model_audit_cli.models import Metrics
 
-GOLDEN_FILE = pathlib.Path(__file__).parent.parent / "fixtures" / "golden" / "metrics.ndjson"
+GOLDEN_FILE = (
+    pathlib.Path(__file__).parent.parent / "fixtures" / "golden" / "metrics.ndjson"
+)
 
 
 def test_golden_file_validates() -> None:
